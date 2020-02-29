@@ -1,0 +1,109 @@
+$primary-bg: rgb(34,34,34);
+$clock-bg: rgb(64,64,64);
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Spartan';
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    h3{
+        color:black;
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+            color:red;
+        }
+    }
+    margin:2.5%;
+}
+
+#info{
+    padding: 5%;
+    margin: 5%;
+    text-align: justify;
+
+    p{
+        margin: 2.5%;
+    }
+    h2{
+        margin: 2.5%;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 5%;
+}
+.clock-head{
+    background-color: yellow;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border: solid 8px $primary-bg;
+}
+
+.active{
+    background-color:green;
+}
+.clock-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:auto;
+    width: 300px;
+    background-color: $clock-bg;
+    gap: 8px;
+    border-radius: 12px;
+    border: solid 8px $primary-bg;
+
+    .hour1, .hour5{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+        background-color: $primary-bg;
+        height: 75px;
+        }
+    
+    .min5{
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-gap: 8px;
+        background-color: $primary-bg;
+        height: 75px;
+        }
+    
+    .min1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+        background-color: $primary-bg;
+        height: 75px;
+        }
+
+    .hour{
+        background-color: gray;
+    }
+
+    .min{        
+        background-color: gray;
+    }
+
+    .min-mid{
+        background-color: darkgrey;
+    }
+}

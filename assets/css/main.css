@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan';
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  margin: 2.5%;
+}
+
+footer h3 {
+  color: black;
+}
+
+footer h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+footer h3 a:hover {
+  color: red;
+}
+
+#info {
+  padding: 5%;
+  margin: 5%;
+  text-align: justify;
+}
+
+#info p {
+  margin: 2.5%;
+}
+
+#info h2 {
+  margin: 2.5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 5%;
+}
+
+.clock-head {
+  background-color: yellow;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border: solid 8px #222222;
+}
+
+.active {
+  background-color: green;
+}
+
+.clock-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: auto;
+  width: 300px;
+  background-color: #404040;
+  gap: 8px;
+  border-radius: 12px;
+  border: solid 8px #222222;
+}
+
+.clock-grid .hour1, .clock-grid .hour5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  background-color: #222222;
+  height: 75px;
+}
+
+.clock-grid .min5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  grid-gap: 8px;
+  background-color: #222222;
+  height: 75px;
+}
+
+.clock-grid .min1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  background-color: #222222;
+  height: 75px;
+}
+
+.clock-grid .hour {
+  background-color: gray;
+}
+
+.clock-grid .min {
+  background-color: gray;
+}
+
+.clock-grid .min-mid {
+  background-color: darkgrey;
+}
+/*# sourceMappingURL=main.css.map */
